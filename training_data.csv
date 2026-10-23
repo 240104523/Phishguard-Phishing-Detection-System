@@ -1,0 +1,49 @@
+url,message,label
+https://secure-account-verify.example/login,Verify your account immediately or access will be suspended,phishing
+http://billing-update-payments.example/confirm,Your payment failed click here to restore your account,phishing
+https://banking-alert-login.example/secure, urgent action required confirm your bank password now,phishing
+http://paypal-refund-center.example/claim,Claim your refund by entering your login details,phishing
+https://amazon-prize-notice.example/redeem,You won a prize verify your account to receive it,phishing
+http://wallet-security-check.example/restore,Your wallet is locked update your password immediately,phishing
+https://account-support-team.example/signin,Confirm your account now to prevent suspension,phishing
+http://invoice-payment-desk.example/view,Open the invoice and submit payment details today,phishing
+https://secure-login-help.example/auth,Click here to verify your identity and continue,phishing
+http://urgent-delivery-fee.example/track,Pay the delivery fee immediately to release your parcel,phishing
+https://bank-account-review.example/update,Your bank account needs urgent verification,phishing
+http://password-reset-center.example/validate,Reset your password now using this secure link,phishing
+https://gift-card-winner.example/claim,Claim your gift card by confirming account details,phishing
+http://payment-confirmation.example/checkout,Your payment is pending click to confirm it,phishing
+https://login-security-notice.example/session,Unusual activity detected verify your login now,phishing
+http://customer-refund-service.example/request,Request your refund and update your bank information,phishing
+https://service-account-alert.example/restore,Account suspended take action immediately to restore access,phishing
+http://secure-wallet-login.example/verify,Verify your wallet password to avoid account closure,phishing
+https://online-banking-protect.example/check,Confirm your banking details to keep your account active,phishing
+http://shipment-fee-payment.example/status,Pay now to avoid return of your package,phishing
+https://verify-cloud-storage.example/signin,Your storage account will close unless you login now,phishing
+http://tax-refund-portal.example/claim,Claim your tax refund by confirming payment details,phishing
+https://account-password-update.example/reset,Click here to update your password immediately,phishing
+http://secure-prize-payout.example/winner,You are a winner enter your account details to claim your prize,phishing
+https://news.northwind.example/articles,Read the latest stories from our newsroom,legitimate
+https://shop.contoso.example/products,Browse products and view your recent orders,legitimate
+https://support.fabrikam.example/help,Find answers in the customer support center,legitimate
+https://portal.adatum.example/dashboard,Sign in through the company portal you already use,legitimate
+https://www.bing.com/search,Search the web for information and news,legitimate
+https://www.wikipedia.org/wiki/Main_Page,Explore articles from the online encyclopedia,legitimate
+https://www.python.org/downloads/,Download Python from the official project website,legitimate
+https://developer.mozilla.org/en-US/,Read web development documentation and guides,legitimate
+https://github.com/features,Explore software development tools and repositories,legitimate
+https://www.mozilla.org/firefox/,Learn about the Firefox browser,legitimate
+https://www.nasa.gov/news/,Read public news and updates from NASA,legitimate
+https://www.weather.gov/,Check the local weather forecast,legitimate
+https://www.loc.gov/,Explore collections from the Library of Congress,legitimate
+https://www.nps.gov/,Plan a visit to a national park,legitimate
+https://www.apple.com/support/,Visit the official product support page,legitimate
+https://www.microsoft.com/en-us/,Explore products and services from Microsoft,legitimate
+https://www.un.org/en/,Read information from the United Nations,legitimate
+https://www.cdc.gov/health-topics.html,Read public health information and resources,legitimate
+https://www.usa.gov/,Find official information and government services,legitimate
+https://www.linkedin.com/jobs/,Search for jobs and manage your professional profile,legitimate
+https://www.coursera.org/,Explore online courses and learning programs,legitimate
+https://www.khanacademy.org/,Study lessons and practice educational topics,legitimate
+https://www.openstreetmap.org/,View and explore the world map,legitimate
+https://www.w3.org/standards/,Read published web standards and specifications,legitimate

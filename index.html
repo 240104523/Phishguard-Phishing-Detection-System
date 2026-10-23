@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard | Phishing Detection</title>
+    <meta
+      name="description"
+      content="PhishGuard helps detect suspicious URLs and scam messages before they reach your users."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">P</div>
+          <div>
+            <div class="brand-name">PhishGuard</div>
+            <div class="brand-subtitle">Threat Intelligence</div>
+          </div>
+        </div>
+
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#scanner">Scanner</a>
+          <a href="#insights">Insights</a>
+        </nav>
+
+        <button class="nav-button" id="getStartedButton">Get Started</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Real-time scam protection</p>
+            <h1>Stop phishing before it reaches your users.</h1>
+            <p class="lead">
+              Scan suspicious links, inspect email content, and flag risky patterns with a
+              fast, AI-assisted phishing detection dashboard.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-button" id="scanNowButton">Run Security Scan</button>
+              <button class="secondary-button" id="viewDemoButton">View Demo</button>
+            </div>
+
+            <div class="hero-metrics">
+              <div>
+                <strong>98.6%</strong>
+                <span>Detection accuracy</span>
+              </div>
+              <div>
+                <strong>1.4s</strong>
+                <span>Avg. scan time</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Threat monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Phishing detection dashboard preview">
+            <div class="status-card large-card">
+              <div class="status-header">
+                <span class="status-dot"></span>
+                <span>Threat Monitor</span>
+              </div>
+              <div class="risk-badge safe">Low Risk</div>
+              <div class="scan-ring">
+                <div class="ring-center">88%</div>
+              </div>
+              <div class="signal-grid">
+                <span>URL</span>
+                <span>Sender</span>
+                <span>Domain</span>
+                <span>Message</span>
+              </div>
+            </div>
+            <div class="mini-card card-one">
+              <span class="mini-label">Blocked</span>
+              <strong>1,284</strong>
+              <small>threats this week</small>
+            </div>
+            <div class="mini-card card-two">
+              <span class="mini-label">Suspicious</span>
+              <strong>14</strong>
+              <small>active campaign alerts</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-strip" id="features">
+          <article class="feature-card" data-demo="url">
+            <div class="feature-icon">🔗</div>
+            <h3>URL Inspection</h3>
+            <p>Check suspicious redirects, fake hostnames, and clone domains.</p>
+          </article>
+          <article class="feature-card" data-demo="email">
+            <div class="feature-icon">✉️</div>
+            <h3>Email Analysis</h3>
+            <p>Score sender impersonation, urgency language, and scam patterns.</p>
+          </article>
+          <article class="feature-card" data-demo="risk">
+            <div class="feature-icon">🛡️</div>
+            <h3>Risk Scoring</h3>
+            <p>Prioritize threats by likelihood of credential theft and fraud.</p>
+          </article>
+        </section>
+
+        <section class="scanner-section" id="scanner">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow dark">Threat scanner</p>
+              <h2>Analyze a message or link</h2>
+            </div>
+            <button class="small-button" id="exportButton" type="button">Export Report</button>
+          </div>
+
+          <div class="scan-grid">
+            <div class="scan-inputs">
+              <label class="field-label" for="urlInput">URL / domain</label>
+              <input
+                id="urlInput"
+                type="text"
+                value="https://secure-login-paypal-verify.com/account"
+                placeholder="Enter a suspicious URL"
+              />
+
+              <label class="field-label" for="messageInput">Email or message content</label>
+              <textarea id="messageInput" rows="7">Urgent action required. Your account will be suspended unless you verify your identity immediately. Click here to secure your account now.</textarea>
+
+              <p class="analysis-note">
+                Analysis checks message wording, sender/domain mismatches, embedded links, and URL patterns.
+                SPF/DKIM/DMARC authentication and live domain reputation are not checked.
+              </p>
+
+              <button class="primary-button full-width" id="analyzeButton">Analyze Threat</button>
+            </div>
+
+            <aside class="result-panel" id="insights" aria-live="polite">
+              <div class="result-header">
+                <span class="result-tag">Scan Result</span>
+                <span class="result-severity moderate" id="severityBadge">Moderate Risk</span>
+              </div>
+
+              <div class="score-wrap">
+                <div class="score-ring">
+                  <div class="score-inner" id="scoreValue">73</div>
+                </div>
+                <p id="scoreLabel">Suspicious activity detected</p>
+              </div>
+
+              <ul class="risk-list" id="riskList">
+                <li>Domain resembles a trusted brand but contains a spoofed subdomain.</li>
+                <li>Urgency language and account lock warning are common phishing patterns.</li>
+                <li>Request for instant action without verification raises suspicion.</li>
+              </ul>
+
+              <div class="recommendation-box">
+                <h4>Recommended action</h4>
+                <p id="recommendationText">
+                  Block the link, warn the user, and confirm the request through official channels.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
